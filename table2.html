@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table</title>
+    <style>
+        table,th,td{
+            border:2px,solid,black;
+            
+        }
+        table{
+            height: 200px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Electronic Devices Table</caption>
+        <tr>
+            <th>Device Id</th>
+            <th>Device name</th>
+            <th>Device characteristic</th>
+            <th>Price per piece</th>
+        </tr>
+        <tr>
+            <td>111</td>
+            <td>Refrigerator</td>
+            <td rowspan="2">color=Silver,Quantity=1(merged cell)</td>
+            <td>45000</td>
+        </tr>
+        <tr>
+            <td>222</td>
+            <td>Air Conditioner</td>
+            <td>55000</td>
+        </tr>
+        <tr>
+            <td>333</td>
+            <td>Microwave Oven</td>
+            <td rowspan="2">color=Black,Quantity=2(merged cell)</td>
+            <td>27000</td>
+        </tr>
+        <tr>
+            <td>444</td>
+            <td>Clothes Iron</td>
+            <td>6000</td>
+        </tr>
+    </table>
+</body>
