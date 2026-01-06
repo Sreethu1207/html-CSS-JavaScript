@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2</title>
+    <style>
+        .sub1 {
+            background-color: rgb(214, 171, 15);
+            width: 400px;
+            height: 50px;
+        }
+
+        .sub2 {
+            background-color: black;
+            width: 400px;
+            height: 400px;
+
+        }
+
+        .sub3 {
+            background-color: rgb(214, 171, 15);
+            width: 400px;
+            height: 50px;
+            text-align: right;
+            padding-top: 10px;
+            
+        }
+
+        td {
+            color: rgb(214, 171, 15);
+            padding:8px;
+            
+        }
+        th{
+            color: rgb(214, 171, 15);
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="form2.html">
+        <div class="sub1">
+            <h1 style="color: yellow; font-size: large;padding-top: 10px; padding-left: 5px;">SignUp</h1>
+        </div>
+        <div class="sub2">
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <td>
+                        <input type="text" id="id1" name="fname" placeholder="Enter First Name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td>
+                        <input type="text" id="id2" name="lname" placeholder="Enter last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Date of Birth</th>
+                    <td>
+                        <select name="date" id="date" placeholder="Date">
+                            <option value="Date">Date</option>
+                            <option value="1">1</option >
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <select name="month" id="month" placeholder="Month">
+                            <option value="Month">Month</option>
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                        </select>
+                        <select name="year" id="year" placeholder="Year">
+                            <Option value="Year">Year</Option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <input type="radio" id="id3" name="gender" value="male"><label for="">Male</label>
+                        <input type="radio" id="id4" name="gender" value="female"><label for="">Feale</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Country</th>
+                    <td>
+                        <select name="country" id="id5" placeholder="Country">
+                            <option value="Select">Select</option>
+                            <option value="usa">usa</option>
+                            <option value="india">India</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>E-mail</th>
+                    <td>
+                         <input type="email" id="id6" name="email" placeholder="Enter E-mail"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td><input type="number" id="id7" name="phone" placeholder="enter phone"></td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td><input type="password" id="id8" name="password" ></td>
+                </tr>
+                <tr>
+                    <th>Confirm Password</th>
+                    <td>
+                        <input type="password" id="id9" name="confirmpassword">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: right;">
+                        <input type="checkbox" name="check" id="id10">
+                        I agree to the terms of use
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sub3">
+            <input type="submit" value="Submit" style="background-color: green; width: 100px; height: 30px;">
+            <input type="submit" value="Cancel" style="background-color: red; width: 100px; height: 30px;">
+
+        </div>
+
+    </form>
+</body>
+
+</html>

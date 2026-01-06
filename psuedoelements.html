@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before{
+            content: "*";
+            color:red;
+        }
+        h3::after{
+            content:"(read more)";
+            color:green;
+        }
+        h2::first-letter{
+            font-size: larger;
+            color: red;
+        }
+        p::first-line{
+            color:blue;
+        }
+        /* h2::selection{
+            background-color: yellow;
+        } */
+        ::selection{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+   <div>
+    <h1>This is importent</h1>
+    <h3>This is the first line of the paragraph.</h3>
+    <p>the rest of the paragraph styled differently from first line</p>
+    <h2>Second heading</h2>
+    <p>this is the first line of the paragraph</p>
+   </div> 
+</body>
+</html>
