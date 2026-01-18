@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="demo"></h1>
+    <p class="demo"></p>
+
+
+    <script>
+        let data = document.getElementsByClassName("demo");
+        for(i=0;i<=data.length;i++){
+            data[i].innerHTML="Hello world"
+        }
+        // document.getElementsByClassName("demo")[0].innerHTML="Hello world";
+        // document.getElementsByClassName("demo")[1].innerHTML="Hello world";
+        // let data=document.getElementsByClassName("demo");
+        // data[0].innerHTML="Hello world"
+        // data[1].innerHTML="Hello World"
+    </script>
+</body>
+
+</html>

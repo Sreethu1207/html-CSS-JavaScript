@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="dom.html" onsubmit="return validateform()">
+        <label>UesrName:</label>
+        <input type="text" id="name" onkeyup="clearmsg('namespan')"><br>
+        <span id="namespan" style="color: red;" ></span><br>
+        <label for="">Password :</label>
+        <input type="text" id="pass" onkeyup="clearmsg('passpan')"><br>
+        <span id="passpan" style="color: red;"></span><br>
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        function validateform()
+        {
+            let name=document.getElementById("name").value;
+            let password = document.getElementById("pass").value;
+
+            if(name==null || name==""){
+                document.getElementById("namespan").innerHTML="please enter value";
+                return false
+            }
+            else if(password.length<6){
+                document.getElementById("passpan").innerHTML="password must be 6 characters";
+                return false
+            }
+        }
+        function clearmsg(sp)
+        {
+            document.getElementById(sp).innerHTML="";
+        }
+        
+    </script>
+</body>
+</html>

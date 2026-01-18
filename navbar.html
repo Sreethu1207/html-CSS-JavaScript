@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .fa-instagram {
+            color: white;
+        }
+
+        .fa-facebook-f {
+            color: white;
+        }
+
+        .fa-linkedin-in {
+            color: white;
+        }
+
+        .btn-outline-dark {
+            background-color: rgb(213, 207, 207);
+        }
+
+        .btn-outline-dark:hover {
+            background-color: rgb(27, 25, 25);
+            color: white;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+            <div>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a class="navbar-brand " href="#">BATHHOUSE</a>
+            <button class="btn btn-outline-dark btn-lg" type="button" style="width: 200px;"><a
+                    style="text-decoration: none;"><i class="fa-solid fa-magnifying-glass"></i>AI
+                    search</a></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gift Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Flatiorn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Williamsburg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Packs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">First Timers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Day pass</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Massage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Scrub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Membership</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Refer a friend</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Suana Rituals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rooftop pool</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <div id="carouselExample" class="carousel slide bg-black">
+        <div class="carousel-inner mt-5 p-5 pb-2">
+            <div class="carousel-item active p-5">
+                <img src="/image/Dicoverycard1.avif" class="d-block " alt="..." width="100%">
+            </div>
+            <div class="carousel-item p-5">
+                <img src="/image/Dicoverycard2.avif" class="d-block " alt="..." width="100%">
+            </div>
+            <div class="carousel-item p-5">
+                <img src="image/Dicoverycard3.avif" class="d-block " alt="..." width="100%">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .fa-instagram {
+            color: white;
+        }
+
+        .fa-facebook-f {
+            color: white;
+        }
+
+        .fa-linkedin-in {
+            color: white;
+        }
+
+        .btn-outline-dark {
+            background-color: rgb(213, 207, 207);
+        }
+
+        .btn-outline-dark:hover {
+            background-color: rgb(27, 25, 25);
+            color: white;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+            <div>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a class="navbar-brand " href="#">BATHHOUSE</a>
+            <button class="btn btn-outline-dark btn-lg" type="button" style="width: 200px;"><a
+                    style="text-decoration: none;"><i class="fa-solid fa-magnifying-glass"></i>AI
+                    search</a></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gift Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Flatiorn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Williamsburg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Packs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">First Timers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Day pass</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Massage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Scrub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Membership</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Refer a friend</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Suana Rituals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rooftop pool</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="bg-black p-5 ">
+        <img class="p-5" src="/image/23095_press_bathhouse_10-23-23_20.webp" alt="" width="100%">
+    </div>
+
+
+    <div class="container-fluid bg-dark text-center">
+        <div class="row p-5">
+            <div class="col text-light fs-3">
+                <h2>BATHHOUSE FLATIRON</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col fs-5"><a href="" class="link-light">14 West 22nd Street <br>New York, NY 10010</a></div>
+            <div class="col fs-5"><a href="" class="link-light">(646) 891 - 1315</a><br>
+                <p class="text-light">FLATIRON@ABATHHOUSE.COM</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col p-4"> <button type="button" class="btn btn-outline-secondary  rounded-0"
+                    style="--bs-btn-padding-y: 1rem;">BOOK NOW</button></div>
+        </div>
+    </div>
+
+
+    <div class="bg-black text-center text-light p-5 ">
+        <p class="fs-3">DAY PASS, STARTS AT $39</p>
+        <img class="p-5" src="/image/240108_+Bathhouse+Flatiron_Pool_1997.webp" alt="" width="100%">
+        <p class="fs-5">Prices vary based on the day and time you choose..</p>
+        <div class="col p-2"> <button type="button" class="btn btn-outline-secondary  rounded-0"
+                style="--bs-btn-padding-y: 1rem;">BROWSE PRICES</button></div>
+    </div>
+
+
+
+    <div class="container-fluid bg-black text-center text-light p-5">
+        <h1 class="fs-3 p-4"> FLATIRON AMENITIES</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-5 p-5">
+            <div class="col">
+                <div class="card bg-dark h-100 rounded-0">
+                    <img src="image/240108_+Bathhouse+Flatiron_Pool_3733.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-light text-start p-5">
+                        <h5 class="card-title"> 6 THERMAL POOLS</h5>
+                        <p class="card-text">Bathhouse Flatiron features six thermal pools: two hot pools (104°F), two
+                            cold pools (45°F and 50°F), neutral pool (98°F) and salt pool (98°F).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-dark h-100 rounded-0">
+                    <img src="image/23095_press_bathhouse_10-23-23_32.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-light text-start p-5">
+                        <h5 class="card-title">BANYA</h5>
+                        <p class="card-text">Powered by a gas furnace, the banya runs between 185°F and 195°F.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-dark h-100 rounded-0">
+                    <img src="/image/23095_press_bathhouse_10-23-23_36_HDR.webp" class="card-img-top " alt="...">
+                    <div class="card-body text-light text-start p-5">
+                        <h5 class="card-title">DRY SAUNA</h5>
+                        <p class="card-text">TSauna Masters perform Aufguss <a href="" class="text-light"> (Guided Sauna
+                                Sessions)</a> in temperatures up to 185°F.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-dark h-100 rounded-0">
+                    <img src="/image/23095_press_bathhouse_10-23-23_24_wide.webp" class="card-img-top " alt="...">
+                    <div class="card-body text-light text-start p-5">
+                        <h5 class="card-title">SALT POOL</h5>
+                        <p class="card-text">The Salt Pool is located in the quiet area. It runs at 98°F.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col p-5"> <button type="button" class="btn btn-outline-secondary  rounded-0"
+                style="--bs-btn-padding-y: 1rem;">BOOK DAY PASS</button></div>
+
+
+
+        <h1 class="fs-3 p-4"> TREATMENTS</h1>
+        <div class="row  g-5 p-5">
+            <div class="col">
+                <div class="card bg-dark h-100 rounded-0">
+                    <img src="image/Bathhouse+Treatment+Rooms+(Full)-13.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-light text-start p-5">
+                        <h5 class="card-title"> MASSAGE</h5>
+                        <p class="card-text">From $195</p>
+                        <p class="card-text">Full-Body Massages for individuals & couples. Includes amenity access
+                            (thermal pools, saunas, steam room).</p>
+                        <ul>
+                            <li> Full-Body Massage, 50 min</li>
+                            <li>Pro Massage, 80 min</li>
+                            <li>Prenatal Massage, 50 min</li>
+                            <li>Couples Massage, 50 min / 80 min</li>
+                        </ul>
+                        <button type="button" class="btn btn-outline-secondary  rounded-0"
+                            style="--bs-btn-padding-y: 1rem;">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-dark h-100 rounded-0">
+                    <img src="image/23095_press_bathhouse_10-23-23_28.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-light text-start p-5">
+                        <h5 class="card-title"> SCRUB</h5>
+                        <p class="card-text">From $130</p>
+                        <p class="card-text">Hammam body scrubs for individuals & couples. Includes amenity access
+                            (thermal pools, saunas, steam room).</p>
+                        <ul>
+                            <li> Hammam Scrub, 30 min</li>
+                            <li>Pro Hammam Scrub, 50 min</li>
+                            <li>Prenatal Hammam Scrub, 30 min / 50 min</li>
+                            <li>Couples Hammam Scrubs, 30 min / 50 min</li>
+                        </ul>
+                        <button type="button" class="btn btn-outline-secondary  rounded-0"
+                            style="--bs-btn-padding-y: 1rem;">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <h1 class="fs-3 p-4">BATHHOUSE FLATIRON REVIWES </h1>
+
+
+        <div id="carouselExample" class="carousel slide p-5">
+            <div class="carousel-inner">
+                <div class="row">
+                <div class="carousel-item  col">
+                    
+                </div>
+                <div class="carousel-item col">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item col">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+
+        <footer>
+            <div class="row">
+                <div class="col text-center p-5">
+                    <p class="text-secondary">LOCATIONS & HOURS</p>
+                    <p><a href="" class="text-light">Flatiron</a></p>
+                    <p>14 West 22nd Street <br>New York, NY 10010</p>
+                    <p><a href="" class="text-light">Williamsburg</a></p>
+                    <p>103 North 10th Street <br>Brooklyn, NY 11249</p>
+                    <p><a href="" class="text-light">Hours</a></p>
+                    <p>Monday to Thursday: 7am - 11pm <br>Friday: 7am - 12am <br>Saturday: 9am - 12am <br>Sunday: 9am -
+                        11pm
+                    </p>
+                </div>
+                <div class="col text-center p-5">
+                    <p class="text-secondary">READ MORE</p>
+                    <p><a href="" class="text-light">FAQ-Health and Safet</a></p>
+                    <p><a href="" class="text-light">Know Before You Go</a></p>
+                    <p><a href="" class="text-light">Code of Conduct</a></p>
+                    <p><a href="" class="text-light">Bathhouse Rewards</a></p>
+                    <p><a href="" class="text-light">Restaurent</a></p>
+                    <p><a href="" class="text-light">Privacy Policy</a></p>
+                    <p><a href="" class="text-light">Terms of Service</a></p>
+
+                </div>
+                <div class="col text-center p-5">
+                    <p class="text-secondary">CONTACT US</p>
+                    <p>Flatiron: <a href="" class="text-light"> (646) 891 - 1315</a></p>
+                    <p>Williamsburg:<a href="" class="text-light"> (929) 489 - 2284 </a></p>
+                    <p>hello@abathhouse.com</p>
+                    <p><a href="" class="text-light">Careers</a></p>
+                    <p><a href="" class="text-light">Creators</a></p>
+                    <p><a href="" class="text-light">Partnership</a></p>
+                    <p><a href="" class="text-light">Contat</a></p>
+                    <p><a href="" class="text-light">Journal</a></p>
+                </div>
+            </div>
+            <p class="p-5 fs-4 pb-0">SUBSCRIBE</p>
+            <p>Stay in the loop</p>
+            <div class="input-group p-5">
+                <input type="email" class="form-control bg-black" placeholder="Email" aria-label="Email"
+                    aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">SIGN UP</button>
+            </div>
+
+            <div class="p-5">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
