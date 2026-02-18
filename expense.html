@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let expense=[12000, 23000, 40000, 34000, 55000, 24000, 10000, 14000, 2000]
+        let max=12000;
+        let min=12000;
+        let sum1=0
+        for(let i=0;i<expense.length;i++){
+       
+            if(expense[i]>max){
+                max=expense[i] 
+            }
+            if(expense[i]<min){
+                min=expense[i]
+            }
+            sum1=sum1+expense[i]
+            
+            
+
+        }
+   
+        document.write("highest value",max)
+        document.write("<br>")
+        document.write("lowest value",min)
+        document.write("<br>")
+       document.write(sum1)
+        
+
+    
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background-color: rgb(241, 234, 234);
+        }
+        
+
+        .parent {
+            height: 400px;
+            width: 400px;
+        }
+
+        .position1 {
+            position: relative;
+            top: 200px;
+            left: 200px;
+            width: 600px;
+            height: 550px;
+            border-radius: 10px;
+            background-image: url(image/position.webp);
+        }
+
+        .position2 {
+            position: relative;
+            bottom: 500px;
+            left: 700px;
+            background-color: white;
+            width: 600px;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        .brands {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 20px;
+            margin-left: 200px;
+            margin-right: 100px;
+        }
+
+        .item {
+            background-color: white;
+            width: 300px;
+            height: 300px;
+            border-radius: 9px;
+
+        }
+
+        footer {
+            background-color: black;
+            height: 100vh;
+        }
+
+        th,
+        td {
+            color: white;
+            padding-left: 50px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-5" href="#">
+                <img src="/image/Coke-company-logo-black.svg" alt="" width="200" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ps-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-5">
+                    <li class="nav-item ps-5">
+                        <a class="nav-link text-black " aria-current="page" href="#">Brand</a>
+                    </li>
+                    <li class="nav-item dropdown ps-5">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Discover
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-black" href="#">Coke Studio Bharat</a></li>
+                            <li><a class="dropdown-item text-black" href="#">Sprite Joke In A Bottle </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ps-5">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Impact
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-black" href="#">Sustainability</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ps-5">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-black" href="#">Big Basket</a></li>
+                            <li><a class="dropdown-item text-black" href="#">Blinkit</a></li>
+                            <li><a class="dropdown-item text-black" href="#">Flipkart</a></li>
+                            <li><a class="dropdown-item text-black" href="#">Jiomart</a></li>
+                            <li><a class="dropdown-item text-black" href="#">Amazon</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide p-3 mt-5">
+            <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-current="true" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner carouselimg">
+                <div class="carousel-item active">
+                    <a href=""><img src="/image/width1960 (1).webp" class="d-block w-100 rounded-4" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                   <a href=""> <img src="/image/width1960 (2).webp" class="d-block w-100 rounded-4" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img src="/image/width1960 (3).webp" class="d-block w-100 rounded-4" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img src="/image/width1960 (4).webp" class="d-block w-100 rounded-4" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img src="/image/width1960 (5).webp" class="d-block w-100 rounded-4" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img src="/image/width1960 (6).webp" class="d-block w-100 rounded-4" alt="..."></a>
+                </div>
+            </div>
+        </div>
+        <h1 style="text-align: center;color: black; padding: 50px;">Experiences</h1>
+        <div class="row gx-5 ">
+            <div class="col">
+                <h1 style="padding: 50px;">Coke Studio Bharat: Drink.<br> Scan. Unlock Exclusive<br> Music.</h1>
+                <div class="d-grid">
+                    <button class="btn btn-outline-secondary m-5" type="button"><a href=""
+                            style="color: black;text-decoration: none;">Explore Now</a></button>
+                </div>
+            </div>
+            <div class="col">
+                <img src="/image/width1338.webp" alt="" width="500px" height="500px" style="border-radius: 10px;">
+            </div>
+        </div>
+
+        <h1 style="text-align: center;color: black; padding: 30px;">Sustainability news</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-5 m-5">
+            <div class="col">
+                <div class="card" width="10rem" style="margin-left: 100px;">
+                    <img src="/image/cards (1).webp" class="card-img-top" alt="..." width="400px" height="500px">
+                    <div class="card-body">
+                        <h5 class="card-title">On a mission to a world without waste
+                        </h5>
+                        <p class="card-text pt-4">We aim to collect back packaging for recycling equivalent to what we
+                            put
+                            out in the market by 2030.</p>
+                        <a href="#" style="color: black;"><i class="fa-solid fa-arrow-right-long"></i>Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" width="10rem" style="margin-right: 100px;">
+                    <img src="/image/cards (2).webp" class="card-img-top" alt="..." width="400px" height="500px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Promoting Sustainable Agriculture
+                        </h5>
+                        <p class="card-text">Our efforts are focussed on improving the overall fruit availability,
+                            increasing farming efficiency as well as building food processing capacity in the country,
+                            thereby helping farmers increase their income.</p>
+                        <a href="#" style="color: black; padding-top: 10px;"><i class="fa-solid fa-arrow-right-long"></i>Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parent">
+            <div class="position1"></div>
+            <div class="position2" style="color: black; padding: 50px;">
+                <h1>Presenting the “Super 30” glorious years of Limca® Book of Records!</h1>
+                <p>This year’s Limca Book of Records is a combined edition of two challenging years and celebrates
+                    stellar victories and accomplishments in human endeavor, education, adventure, business, cinema, the
+                    natural world, literature, and the arts.</p>
+                <div class="d-grid">
+                    <button class="btn btn-outline-secondary m-5" type="button"><a href=""
+                            style="color: black;text-decoration: none;">Learn more</a></button>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 style="text-align: center;color: black; padding-top: 500px;padding-bottom: 50px;">Explore Our Brands</h1>
+        <div class="brands">
+            <div class="item"><img src="/image/Coca-Cola-Logo1.svg" alt="" style="padding: 50px;"></div>
+            <div class="item"><img src="/image/Sprite Logo.svg" alt="" style="padding: 50px;"></div>
+            <div class="item"><img src="/image/TU Logo.svg" alt="" style="padding: 50px;"></div>
+            <div class="item"><img src="/image/Limca.svg" alt="" style="padding: 50px;"></div>
+            <div class="item"><img src="/image/width1960 (7).webp" alt="" width="350px" height="300px"
+                    style="padding: 50px;"></div>
+            <div class="item"><img src="/image/maaza desktop-01.svg" alt="" style="padding: 50px;"></div>
+        </div>
+        <div class="d-grid  col-4 mx-auto p-5 rounded-4">
+            <button class="btn btn-dark" type="button">View All</button>
+        </div>
+
+        <div style="margin-left: 200px; margin-right: 100px;">
+            <p>COCA-COLA: CARBONATED WATER. COCA-COLA IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN
+                PRODUCT.</p>
+            <p>COCA-COLA ZERO SUGAR: CARBONATED WATER. CONTAINS NON-CALORIC SWEETENER. THIS CARBONATED WATER CONTAINS AN
+                ADMIXTURE OF SUCRALOSE AND ACESULFAME POTASSIUM. NOT RECOMMENDED FOR CHILDREN, PREGNANT AND LACTATING
+                MOTHERS. TRADEMARK OWNER: THE COCA-COLA COMPANY. VEGETARIAN PRODUCT. </p>
+            <p>DIET COKE: CARBONATED WATER. CONTAINS AN ADMIXTURE OF ASPARTAME AND ACESULFAME POTASSIUM. NOT RECOMMENDED
+                FOR PHENYLKETONURICS; FOR CHILDREN; PREGNANT AND LACTATING MOTHERS. COKE IS A REGISTERED TRADEMARK OF
+                THE COCA-COLA COMPANY. VEGETARIAN PRODUCT. </p>
+            <p>SPRITE: CARBONATED WATER. SPRITE IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN PRODUCT.
+            </p>
+            <p>THUMS UP: CARBONATED WATER. THUMS UP IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN
+                PRODUCT.</p>
+            <p>LIMCA: CARBONATED WATER. ADDED LIME AND LEMON FLAVORS. 'LIME AND LEMONI' IS A CREATIVE EXPRESSION USED
+                FOR LIMCA. LIMCA IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN PRODUCT.</p>
+            <p>LIMCA SPORTZ: READY TO SERVE FRUIT BEVERAGE. *CONTAINS CARBOHYDRATE (INCLUDES 2.2% GLUCOSE) AND WITH
+                ELECTROLYTES (SODIUM, POTASSIUM, CHLORIDE) WHICH HELP IN FASTER REHYDRATION THROUGH QUICK REPLACEMENT OF
+                FLUID AND SALTS LOST IN SWEAT. LIMCA IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN
+                PRODUCT.</p>
+            <p>FANTA: CARBONATED WATER. FANTA IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN PRODUCT.
+            </p>
+            <p>FANTA APPLE DELITE: CARBONATED FRUIT BEVERAGE. CONTAINS 10.5% APPLE JUICE. CONTAINS NO FRUIT PIECES.
+                "BITE" REFERS TO CRISPY, CRUNCHY TASTE OF APPLE. FANTA IS A REGISTERED TRADEMARK OF THE COCA-COLA
+                COMPANY. VEGETARIAN PRODUCT.</p>
+            <p>MAAZA ORIGINAL: READY TO SERVE FRUIT DRINK. MAAZA MANGO CONTAINS BLEND OF MANGO PULP INCLUDING ALPHONSO.
+                MAAZA IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY</p>
+            <p>MAAZA AAM PANNA: READY TO SERVE FRUIT DRINK. MAAZA AAM PANNA IS A REGISTERED TRADEMARK OF THE COCA-COLA
+                COMPANY</p>
+            <p>SCHWEPPES BITTER LEMON, SCHWEPPES MINT MOJITO: CARBONATED WATER. SCHWEPPES IS A REGISTERED TRADEMARK OF
+                EUROPEAN REFRESHMENTS UNLIMITED COMPANY. DRINK RESPONSIBLY.</p>
+            <p>CHARGED BY THUMS UP: CAFFEINATED BEVERAGE. *CHARGED BY THUMS UP HAS 2.8 TIMES CAFFEINE COMPARED TO
+                REGULAR 250ml THUMS UP. CONTAINS ADDED BERRY FLAVOURS. HIGH CAFFEINE: 62.5mg/250ml. NOT RECOMMENDED FOR
+                CHILDREN, PREGNANT OR LACTATING WOMEN, PERSONS SENSITIVE TO CAFFEINE. CONSUME NOT MORE THAN 500ml PER
+                DAY. THUMS UP IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. * MRP INCLUSIVE OF ALL TAXES.
+                VEGETARIAN PRODUCT.</p>
+
+        </div>
+        </div>
+        <footer>
+            <div style="margin-left: 200px;padding-right: 100px;"><img src="/image/logo-white-large (1).svg" alt=""
+                    width="200px" height="100px">
+                <button type="button" class="btn btn-outline-dark" style="margin-left: 700px; color: white;"><i
+                        class="fa-solid fa-location-dot"></i>India|English</button>
+            </div>
+            <hr style="color: white; height: 5px;">
+            <div style="display: flex;">
+                <div>
+                    <table style="margin-left: 200px;">
+                        <tr>
+                            <th>ABOUT US</th>
+                            <th>NEED HELP</th>
+                            <th></th>
+
+                        </tr>
+                        <tr>
+                            <td>Our company</td>
+                            <td>FAQ</td>
+                            <td>Terms of use</td>
+
+                        </tr>
+                        <tr>
+                            <td>Media Center</td>
+                            <td>Sitemap</td>
+                            <td>Privacy Policy</td>
+                        </tr>
+                        <tr>
+                            <td>History</td>
+                            <td>Contact Us</td>
+                            <td>Financial & Policy Documents</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Careers</td>
+                            <td></td>
+                            <td>Supplier Terms & Conditions –<br> Concentrate Production<br> Services (CPS)</td>
+                        </tr>
+                        <tr>
+                            <td>Leadership</td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="color: white; text-align: right; margin-left:500px ;"><i class="fa-brands fa-x-twitter ps-5"></i><i class="fa-brands fa-instagram ps-5"></i><i
+                        class="fa-brands fa-youtube ps-5"></i><i class="fa-brands fa-facebook-f ps-5"></i></div>
+            </div>
+            <hr style="color: white; height: 5px;">
+            <p style="text-align: right; color: white;">© 2026 The Coca‑Cola Company. All rights reserved.</p>
+        </footer>
+
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

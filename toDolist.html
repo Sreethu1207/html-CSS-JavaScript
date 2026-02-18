@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="firstask"></p>
+    <p id="lastask"></p>
+
+    <script>
+        let todolist=["Drink water","Check emails"];
+        document.getElementById("demo").innerHTML=todolist
+
+        todolist.unshift("Morning Exercise");
+        document.getElementById("demo1").innerHTML=todolist
+
+        todolist.push("Team meeting","Code review")
+        console.log(todolist)
+        document.getElementById("demo2").innerHTML=todolist
+        
+        firstTask=todolist.shift()
+        document.getElementById("firstask").innerHTML=todolist
+
+        lastTask=todolist.pop()
+        document.getElementById("lastask").innerHTML=todolist
+
+        console.log(todolist.length);
+        console.log(todolist);
+        console.log(firstTask);
+        console.log(lastTask);
+    </script>
+</body>
+</html>
